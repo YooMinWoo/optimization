@@ -11,23 +11,12 @@ import lombok.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Getter
-public class Post {
+public class User {
 
     @Id
     @GeneratedValue
-    @Column(name = "post_id")
+    @Column(name = "user_id")
     private Long id;
 
-    private String title;
-    private String content;
-
-//    private String etc1;
-//    private String etc2;
-//    private String etc3;
-//    private String etc4;
-//    private String etc5;
-//    private String etc6;
-//    private String etc7;
-//    private String etc8;
-//    private String etc9;
+    private String name;
 }
